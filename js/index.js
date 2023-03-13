@@ -1,6 +1,7 @@
 //AFFICHAGE SECTION CV
 let sectionCV = document.getElementById('section-cv-index');
 let flecheVersCV = document.getElementById('flecheVersCV');
+let recommandation = document.getElementById('recommandation');
 
 //Affichage titre et div fondu
 let titre = document.getElementById('montitre')
@@ -13,6 +14,7 @@ let lignePortfolio = document.getElementById('ligne-titre-portfolio');
 
 function AfficheCV() {
     sectionCV.style.display = "flex"
+    recommandation.style.display = "flex"
     titre.style.animationPlayState = "running"
     sectionCVForm.style.animationPlayState = "running"
     sectionCVExp.style.animationPlayState = "running"
