@@ -4,7 +4,7 @@ let tech = document.getElementById('comp-tech')
 let titre1 = document.getElementById('titre-tech')
 
 function Technique() {
-    if(getComputedStyle(tech).opacity === '0') {
+    if(getComputedStyle(tech).display === "none") {
         tech.className = 'comp-item-ouvre'
         fleche1.className = 'ouvre'
     } else {
@@ -21,7 +21,7 @@ let soft = document.getElementById('comp-soft')
 let titre2 = document.getElementById('titre-soft')
 
 function Soft() {
-    if(getComputedStyle(soft).opacity === '0') {
+    if(getComputedStyle(soft).display === "none") {
         soft.className = 'comp-item-ouvre'
         fleche2.className = 'ouvre'
     } else {
@@ -38,7 +38,7 @@ let gestion = document.getElementById('comp-gestion')
 let titre3 = document.getElementById('titre-gestion')
 
 function Gestion() {
-    if(getComputedStyle(gestion).opacity === '0') {
+    if(getComputedStyle(gestion).display === "none") {
         gestion.className = 'comp-item-ouvre'
         fleche3.className = 'ouvre'
     } else {
@@ -55,7 +55,7 @@ let socio = document.getElementById('comp-socio')
 let titre4 = document.getElementById('titre-socio')
 
 function Socio() {
-    if(getComputedStyle(socio).opacity === '0') {
+    if(getComputedStyle(socio).display === "none") {
         socio.className = 'comp-item-ouvre'
         fleche4.className = 'ouvre'
     } else {
@@ -72,11 +72,11 @@ let langue = document.getElementById('comp-langue')
 let titre5 = document.getElementById('titre-langue')
 
 function Langue() {
-    if(getComputedStyle(langue).opacity === '0') {
-        langue.className = 'comp-item-ouvre2'
+    if(getComputedStyle(langue).display === "none") {
+        langue.className = 'comp-item-ouvre'
         fleche5.className = 'ouvre'
     } else {
-        langue.className = 'comp-item-ferme2'
+        langue.className = 'comp-item-ferme'
         fleche5.className = 'ferme'
     }
 }
@@ -89,11 +89,11 @@ let interest = document.getElementById('interest')
 let titre6 = document.getElementById('titre-interest')
 
 function Interest() {
-    if(getComputedStyle(interest).opacity === '0') {
-        interest.className = 'comp-item-ouvre2'
+    if(getComputedStyle(interest).display === "none") {
+        interest.className = 'comp-item-ouvre'
         fleche6.className = 'ouvre'
     } else {
-        interest.className = 'comp-item-ferme2'
+        interest.className = 'comp-item-ferme'
         fleche6.className = 'ferme'
     }
 }
