@@ -66,6 +66,7 @@ flecheFermeFormation.addEventListener("click", fermeFormation)
 //AFFICHAGE SECTION COMPETENCES
 let flecheVersComp = document.getElementById('flecheVersComp');
 let sectionComp = document.getElementById('section-comp-index');
+let recommandation2 = document.getElementById('recommandation2');
 
 //Affichage fondu titre et div
 let titreComp = document.getElementById('titreComp');
@@ -83,6 +84,7 @@ function AfficheComp() {
     socio.style.animationPlayState = "running"
     ligneComp.style.animationPlayState = "running"
     flecheVersComp.style.display = "none"
+    recommandation2.style.display = "flex"
 }
 
 flecheVersComp.addEventListener("click", AfficheComp)
@@ -93,6 +95,7 @@ let sectionPortfolio = document.getElementById('section-portfolio-index');
 let titrePort = document.getElementById('titrePort')
 let projetFormation = document.getElementById('projet-formation')
 let projetPerso = document.getElementById('projet-perso')
+let footer = document.getElementById('new-footer')
 
 function AffichePort() {
     sectionPortfolio.style.display = "flex"
@@ -101,6 +104,7 @@ function AffichePort() {
     titrePort.style.animationPlayState = "running"
     projetFormation.style.animationPlayState = "running"
     projetPerso.style.animationPlayState = "running"
+    footer.style.display = "block"
 }
 
 flecheVersPort.addEventListener("click", AffichePort)
