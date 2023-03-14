@@ -104,7 +104,7 @@ function AffichePort() {
     titrePort.style.animationPlayState = "running"
     projetFormation.style.animationPlayState = "running"
     projetPerso.style.animationPlayState = "running"
-    footer.style.display = "block"
+    footer.style.display = "flex"
 }
 
 flecheVersPort.addEventListener("click", AffichePort)
