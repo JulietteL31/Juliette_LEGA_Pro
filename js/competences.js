@@ -50,21 +50,21 @@ function Gestion() {
 titre3.addEventListener('click', Gestion)
 
 //Ouverture compétences sociologiques
-let fleche4 = document.getElementById('flecheC4')
-let socio = document.getElementById('comp-socio')
-let titre4 = document.getElementById('titre-socio')
+// let fleche4 = document.getElementById('flecheC4')
+// let socio = document.getElementById('comp-socio')
+// let titre4 = document.getElementById('titre-socio')
 
-function Socio() {
-    if(getComputedStyle(socio).display === "none") {
-        socio.className = 'comp-item-ouvre'
-        fleche4.className = 'ouvre'
-    } else {
-        socio.className = 'comp-item-ferme'
-        fleche4.className = 'ferme'
-    }
-}
+// function Socio() {
+//     if(getComputedStyle(socio).display === "none") {
+//         socio.className = 'comp-item-ouvre'
+//         fleche4.className = 'ouvre'
+//     } else {
+//         socio.className = 'comp-item-ferme'
+//         fleche4.className = 'ferme'
+//     }
+// }
 
-titre4.addEventListener('click', Socio)
+// titre4.addEventListener('click', Socio)
 
 //Ouverture compétences linguistiques
 let fleche5 = document.getElementById('flecheC5')
