@@ -1,7 +1,6 @@
 //AFFICHAGE SECTION CV
 let sectionCV = document.getElementById('section-cv-index');
 let flecheVersCV = document.getElementById('flecheVersCV');
-let recommandation = document.getElementById('recommandation');
 
 //Affichage titre et div fondu
 let titre = document.getElementById('montitre')
@@ -11,10 +10,11 @@ let sectionCVExp = document.getElementById('expIndex');
 let ligne = document.getElementById('ligne-titre');
 let ligneComp = document.getElementById('ligne-titre-comp');
 let lignePortfolio = document.getElementById('ligne-titre-portfolio');
+let footer = document.getElementById('new-footer')
 
 function AfficheCV() {
     sectionCV.style.display = "flex"
-    recommandation.style.display = "flex"
+    footer.style.display = "flex"
     titre.style.animationPlayState = "running"
     sectionCVForm.style.animationPlayState = "running"
     sectionCVExp.style.animationPlayState = "running"
@@ -95,7 +95,7 @@ let sectionPortfolio = document.getElementById('section-portfolio-index');
 let titrePort = document.getElementById('titrePort')
 let projetFormation = document.getElementById('projet-formation')
 let projetPerso = document.getElementById('projet-perso')
-let footer = document.getElementById('new-footer')
+let recommandation = document.getElementById('recommandation');
 
 function AffichePort() {
     sectionPortfolio.style.display = "flex"
@@ -104,7 +104,8 @@ function AffichePort() {
     titrePort.style.animationPlayState = "running"
     projetFormation.style.animationPlayState = "running"
     projetPerso.style.animationPlayState = "running"
-    footer.style.display = "flex"
+    recommandation.style.display = "flex"
+
 }
 
 flecheVersPort.addEventListener("click", AffichePort)
