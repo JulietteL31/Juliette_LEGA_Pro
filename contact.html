@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cb8e7ae64b.js" crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="logo-feuille.png" />
+        <link rel="apple-touch-icon" href="logo-feuille.png" />
+        <title>Juliette LEGA - Me Contacter</title>
+    </head>
+    
+    <body>
+        <header>
+
+            <div id="bouton" class="apparition1">☰</div>
+            <nav class="nav affichageNav">
+                <ul id="display">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li class="nav__déroulant"><a href="curriculum.html">MON CURRICULUM</a>
+                        <!-- <ul class="sous">
+                            <li><a href="formation.html">Ma formation</a></li>
+                            <li><a href="experience.html">Mes expériences</a></li>
+                            <li><a href="competences.html">Mes compétences</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="competences.html">MES COMPETENCES</a></li>
+                    <li><a href="portfolio.html">MON PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section-form">
+            <h1 class="titre-comp-competences"><i class="fa-solid fas fa-paper-plane"></i>Me contacter</h1>
+            <div class="ligne-titre"></div>
+            <p class="info-form">Après avoir cliqué sur "Envoyer" vous serez automatiquement redirigé vers votre client de messagerie</p>
+            <form action="mailto:legajuliette@gmail.com?subject=Demande de contact" name="envoi" method="post" enctype="text/plain" class="form-contact">
+                <div class="container-form">
+                    <div class="div-input">
+                        <label for="nom" class="label">Nom / Prénom : *</label>
+                        <input type="text" name="nom" id="nom" class="input-form" required/>
+                        <!-- <span class="validity"></span> -->
+                    </div>
+                    <p id="nomErrorMsg"></p>
+                    <div class="div-input">
+                        <label for="entreprise" class="label">Entreprise :</label>
+                        <input type="text" name="entreprise" id="entreprise" class="input-form"/>
+                    </div>
+                    <div class="div-input">
+                        <label for="mail" class="label">Email : *</label>
+                        <input type="email" name="mail" id="mail" class="input-form" required/>
+                        <!-- <span class="validity"></span> -->
+                    </div>
+                    <p id="emailErrorMsg"></p>
+                    <div class="div-input">
+                        <label for="message" class="label">Message : *</label>
+                        <textarea type="text" name="message" id="message" class="input-form input-message" required></textarea>
+                        <!-- <span class="validity"></span> -->
+                    </div>
+                    <div class="div-button-form">
+                        <button type="submit" value="Envoyer" class="button-form envoie" id="envoyer">Envoyer</button>
+                        <button type="reset" value="Effacer" class="button-form efface">Effacer</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer id="new-footer" class="footer">
+            <div class="footer-contact"><h5>Me contacter</h5></div>
+            <div class="ligne-footer"></div>
+            <div class="footer-reseau">
+                <a class="footer-icone-contact" target="_blank" href="https://www.linkedin.com/in/juliette-lega/"><img src="./photos/icone-linkedin2.jpg"/></a>
+                <a class="footer-icone-contact" target="_blank" href="mailto:legajuliette@gmail.com"><img src="./photos/arobase.webp"/></a>
+                <a class="footer-icone-contact" target="_blank" href="https://github.com/JulietteL31"><img src="./photos/icone-github.png"/></a>
+            </div>
+        </footer>
+        <script src="./js/contact.js"></script>
+    </body>
+</html>
