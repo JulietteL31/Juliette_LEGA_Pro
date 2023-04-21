@@ -40,7 +40,7 @@
         <section id="section-form">
             <h1 class="titre-comp-competences"><i class="fa-solid fas fa-paper-plane"></i>Me contacter</h1>
             <div class="ligne-titre"></div>
-            <p class="info-form">Après avoir cliqué sur "Envoyer" vous serez automatiquement redirigé vers votre client de messagerie</p>
+            <p class="info-form">Si vous souhaitez me contacter, je vous invite à remplir le formulaire suivant pour plus de facilité. Vous pouvez également me joindre sur <a class="lien-linkedin-contact">LinkedIn</a> ou à ce numéro: 0611387378.</p>
             <form action="mailto:legajuliette@gmail.com?subject=Demande de contact" name="envoi" method="post" enctype="text/plain" class="form-contact">
                 <div class="container-form">
                     <div class="div-input">
@@ -60,6 +60,10 @@
                     </div>
                     <p id="emailErrorMsg"></p>
                     <div class="div-input">
+                        <label for="objet" class="label">Objet :</label>
+                        <input type="text" name="objet" id="objet" class="input-form"/>
+                    </div>
+                    <div class="div-input">
                         <label for="message" class="label">Message : *</label>
                         <textarea type="text" name="message" id="message" class="input-form input-message" required></textarea>
                         <!-- <span class="validity"></span> -->
@@ -70,11 +74,11 @@
                     </div>
                 </div>
             </form>
-            <p class="info-form">Je suis également joignable par téléphone au : 06 11 38 73 78</p>
-            <p class="info-form-lien">Ou sur <a class="lien-linkedin-contact"><img src="./photos/icone-linkedin.png" class="logo-techno"/>LinkedIn</a></p>
+            <!-- <p class="info-form">Je suis également joignable par téléphone au : 06 11 38 73 78</p>
+            <p class="info-form-lien">Ou sur <a class="lien-linkedin-contact"><img src="./photos/icone-linkedin.png" class="logo-techno"/>LinkedIn</a></p> -->
         </section>
 
-        <footer id="new-footer" class="footer">
+        <!-- <footer id="new-footer" class="footer">
             <div class="footer-contact"><h5>Me contacter</h5></div>
             <div class="ligne-footer"></div>
             <div class="footer-reseau">
@@ -82,7 +86,7 @@
                 <a class="footer-icone-contact" target="_blank" href="mailto:legajuliette@gmail.com"><img src="./photos/arobase.webp"/></a>
                 <a class="footer-icone-contact" target="_blank" href="https://github.com/JulietteL31"><img src="./photos/icone-github.png"/></a>
             </div>
-        </footer>
+        </footer> -->
         <script src="./js/contact.js"></script>
     </body>
 </html>
