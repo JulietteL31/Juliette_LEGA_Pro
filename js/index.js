@@ -84,7 +84,7 @@ function AfficheComp() {
     socio.style.animationPlayState = "running"
     ligneComp.style.animationPlayState = "running"
     flecheVersComp.style.display = "none"
-    recommandation2.style.display = "flex"
+    // recommandation2.style.display = "flex"
 }
 
 flecheVersComp.addEventListener("click", AfficheComp)
@@ -104,8 +104,57 @@ function AffichePort() {
     titrePort.style.animationPlayState = "running"
     projetFormation.style.animationPlayState = "running"
     projetPerso.style.animationPlayState = "running"
-    recommandation.style.display = "flex"
+    // recommandation.style.display = "flex"
 
 }
 
 flecheVersPort.addEventListener("click", AffichePort)
+
+
+//AFFICHAGE RECOMMANDATIONS
+
+//Recommandation 1
+let divReco = document.getElementById('div-reco');
+let bulle = document.getElementById("bulle");
+let reco = document.getElementById("reco");
+let pointsReco = document.getElementById("points-reco")
+
+function AfficheReco() {
+    bulle.style.display = "none";
+    reco.className = "p-reco";
+    reco.style.animationPlayState = "running";
+}
+
+bulle.addEventListener('click', AfficheReco);
+pointsReco.addEventListener('click', AfficheReco);
+
+function FermeReco() {
+    bulle.style.display = "block";
+    reco.className = "recoFerme";
+    reco.style.animationPlayState = "running";
+}
+
+reco.addEventListener('click', FermeReco);
+
+//Recommandation 2
+let divReco2 = document.getElementById('div-reco2');
+let bulle2 = document.getElementById("bulle2");
+let reco2 = document.getElementById("reco2");
+let pointsReco2 = document.getElementById("points-reco2")
+
+function AfficheReco2() {
+    bulle2.style.display = "none";
+    reco2.className = "p-reco";
+    reco2.style.animationPlayState = "running";
+}
+
+bulle2.addEventListener('click', AfficheReco2);
+pointsReco2.addEventListener('click', AfficheReco2);
+
+function FermeReco2() {
+    bulle2.style.display = "block";
+    reco2.className = "recoFerme";
+    reco2.style.animationPlayState = "running";
+}
+
+reco2.addEventListener('click', FermeReco2);

@@ -46,3 +46,16 @@ function Envoie() {
         // "Veuillez saisir un email valide (exemple : salut@contact.com)";
     }
 }
+
+//Navigation mobile
+let bouton2 = document.getElementById('bouton');
+let affiche = document.getElementById('display');
+let nav = document.querySelector('.nav');
+
+bouton2.addEventListener("click", () => {
+    if(getComputedStyle(nav).display != "block"){      
+      nav.style.display = "block";
+    } else {
+      nav.style.display = "none";
+    }
+  })
